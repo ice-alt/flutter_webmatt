@@ -6,9 +6,10 @@
 //   runApp(const TabBarDemo());
 // }
 
+//@dart=2.9
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_webmatt/firstpage.dart';
+import 'package:flutter_webmatt/enrollment.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -25,7 +26,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
       title: 'Master Ashesi Timetable',
-      home: FirstPage(),
+      home: Enrollment(),
+      //FirstPage(),
       debugShowCheckedModeBanner: false,
     );
   }
