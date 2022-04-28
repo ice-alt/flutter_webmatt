@@ -38,6 +38,9 @@ dependencies:
   ant_icons: ^1.0.0
   easy_sidemenu: ^0.2.1
   cell_calendar: ^0.5.0+1
+  cupertino_date_textbox: ^1.0.1
+  material_floating_search_bar: ^0.3.7
+
 
 dev_dependencies:
   flutter_test:

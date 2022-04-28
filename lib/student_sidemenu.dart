@@ -91,13 +91,13 @@ class _StudentPageState extends State<StudentPage> {
                 ),
               ],
             ),
-            // footer: Padding(
-            //   padding: const EdgeInsets.all(8.0),
-            //   child: Text(
-            //     'mohada',
-            //     style: TextStyle(fontSize: 15),
-            //   ),
-            // ),
+            footer: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Ashesi University',
+                style: TextStyle(fontSize: 15, color: Colors.white),
+              ),
+            ),
             items: [
               SideMenuItem(
                 priority: 0,

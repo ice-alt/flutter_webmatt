@@ -1,6 +1,8 @@
 import 'package:ant_icons/ant_icons.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_webmatt/billing.dart';
+import 'package:flutter_webmatt/edit_events_classes.dart';
 
 // void main() {
 //   runApp(MyApp());
@@ -88,13 +90,13 @@ class _StaffPageState extends State<StaffPage> {
                 ),
               ],
             ),
-            // footer: Padding(
-            //   padding: const EdgeInsets.all(8.0),
-            //   child: Text(
-            //     'mohada',
-            //     style: TextStyle(fontSize: 15),
-            //   ),
-            // ),
+            footer: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Ashesi University',
+                style: TextStyle(fontSize: 15, color: Colors.white),
+              ),
+            ),
             items: [
               SideMenuItem(
                 priority: 0,
@@ -106,7 +108,7 @@ class _StaffPageState extends State<StaffPage> {
               ),
               SideMenuItem(
                 priority: 1,
-                title: 'Add or see events & classes',
+                title: 'Add Events',
                 onTap: () {
                   page.jumpToPage(1);
                 },
@@ -135,24 +137,8 @@ class _StaffPageState extends State<StaffPage> {
                     ),
                   ),
                 ),
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    child: Text(
-                      'Add or see events & classes',
-                      style: TextStyle(fontSize: 35),
-                    ),
-                  ),
-                ),
-                Container(
-                  color: Colors.white,
-                  child: Center(
-                    child: Text(
-                      'Billing',
-                      style: TextStyle(fontSize: 35),
-                    ),
-                  ),
-                ),
+                EditEvents(),
+                Billing(),
               ],
             ),
           ),
