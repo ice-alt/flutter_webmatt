@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_webmatt/signinviewLeft.dart';
-import 'package:flutter_webmatt/signinviewRight.dart';
+import 'package:flutter_webmatt/signinfinalLeft.dart';
+import 'package:flutter_webmatt/signinfinalRight.dart';
 
-class SigninView extends StatefulWidget {
-  const SigninView({Key? key}) : super(key: key);
+class SignInFinal extends StatefulWidget {
+  const SignInFinal({Key? key}) : super(key: key);
 
   @override
-  _SigninViewState createState() => _SigninViewState();
+  _SignInFinalState createState() => _SignInFinalState();
 }
 
-class _SigninViewState extends State<SigninView> {
+class _SignInFinalState extends State<SignInFinal> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +17,7 @@ class _SigninViewState extends State<SigninView> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SignInViewDisplay(),
+      home: SignInFinalDisplay(),
       debugShowCheckedModeBanner: false,
     );
     // return Container(
@@ -33,9 +33,9 @@ class _SigninViewState extends State<SigninView> {
     //     ),
     //     child: Row(
     //       children: [
-    //         const SignInPageLeft(),
+    //         const SignInFinalLeft(),
     //         if (MediaQuery.of(context).size.width > 900)
-    //           const SignInPageRight(),
+    //           const SignInFinalRight(),
     //       ],
     //     ),
     //   ),
@@ -44,14 +44,14 @@ class _SigninViewState extends State<SigninView> {
   }
 }
 
-class SignInViewDisplay extends StatefulWidget {
-  const SignInViewDisplay({Key? key}) : super(key: key);
+class SignInFinalDisplay extends StatefulWidget {
+  const SignInFinalDisplay({Key? key}) : super(key: key);
 
   @override
-  _SignInViewDisplayState createState() => _SignInViewDisplayState();
+  _SignInFinalDisplayState createState() => _SignInFinalDisplayState();
 }
 
-class _SignInViewDisplayState extends State<SignInViewDisplay> {
+class _SignInFinalDisplayState extends State<SignInFinalDisplay> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -67,9 +67,9 @@ class _SignInViewDisplayState extends State<SignInViewDisplay> {
         ),
         child: Row(
           children: [
-            const SignInPageLeft(),
+            const SignInFinalLeft(),
             if (MediaQuery.of(context).size.width > 900)
-              const SignInPageRight(),
+              const SignInFinalRight(),
           ],
         ),
       ),

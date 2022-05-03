@@ -1,7 +1,7 @@
 import 'package:ant_icons/ant_icons.dart';
 import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_webmatt/enrollment.dart';
+import 'package:flutter_webmatt/edit_events_classes.dart';
 import 'package:flutter_webmatt/student_timetable.dart';
 
 // void main() {
@@ -16,22 +16,22 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: StudentPage(title: 'easy_sidemenu Demo'),
+      home: RegistryPage(title: 'easy_sidemenu Demo'),
       debugShowCheckedModeBanner: false,
     );
   }
 }
 
-class StudentPage extends StatefulWidget {
-  StudentPage({Key? key, required this.title}) : super(key: key);
+class RegistryPage extends StatefulWidget {
+  RegistryPage({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
   @override
-  _StudentPageState createState() => _StudentPageState();
+  _RegistryPageState createState() => _RegistryPageState();
 }
 
-class _StudentPageState extends State<StudentPage> {
+class _RegistryPageState extends State<RegistryPage> {
   PageController page = PageController();
 
   @override
@@ -98,48 +98,56 @@ class _StudentPageState extends State<StudentPage> {
               ),
             ),
             items: [
-              // SideMenuItem(
-              //   priority: 0,
-              //   title: 'Dashboard',
-              //   onTap: () {
-              //     page.jumpToPage(0);
-              //   },
-              //   icon: Icon(Icons.home),
-              // ),
               SideMenuItem(
                 priority: 0,
-                title: 'Timetable',
+                title: 'Course Approval',
                 onTap: () {
                   page.jumpToPage(0);
                 },
-                icon: Icon(Icons.table_chart),
+                icon: Icon(Icons.pending_actions_outlined),
               ),
               SideMenuItem(
                 priority: 1,
-                title: 'Enrollment',
+                title: 'Add Events',
                 onTap: () {
                   page.jumpToPage(1);
                 },
-                icon: Icon(Icons.supervisor_account),
+                icon: Icon(Icons.note_add_outlined),
               ),
+              SideMenuItem(
+                priority: 2,
+                title: 'View Classes and Events',
+                onTap: () {
+                  page.jumpToPage(2);
+                },
+                icon: Icon(Icons.view_agenda_outlined),
+              ),
+              // SideMenuItem(
+              //   priority: 2,
+              //   title: 'Billing',
+              //   onTap: () {
+              //     page.jumpToPage(2);
+              //   },
+              //   icon: Icon(Icons.money),
+              // ),
             ],
           ),
           Expanded(
             child: PageView(
               controller: page,
               children: [
-                //Dashboard(),
+                Container(
+                  color: Colors.white,
+                  child: Center(
+                    child: Text(
+                      'Course Approval',
+                      style: TextStyle(fontSize: 35),
+                    ),
+                  ),
+                ),
+                EditEvents(),
                 StudentTable(),
-                // Container(
-                //   color: Colors.white,
-                //   child: Center(
-                //     child: Text(
-                //       'Enrollment',
-                //       style: TextStyle(fontSize: 35),
-                //     ),
-                //   ),
-                // ),
-                Enrollment(),
+                // Billing(),
               ],
             ),
           ),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SignUpPageLeft extends StatelessWidget {
-  const SignUpPageLeft({Key? key}) : super(key: key);
+class SignInFinalLeft extends StatelessWidget {
+  const SignInFinalLeft({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

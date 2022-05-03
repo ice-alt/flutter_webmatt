@@ -2,14 +2,14 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 
-class SignUpPageRight extends StatefulWidget {
-  const SignUpPageRight({Key? key}) : super(key: key);
+class SignInFinalRight extends StatefulWidget {
+  const SignInFinalRight({Key? key}) : super(key: key);
 
   @override
-  _SignUpPageRightState createState() => _SignUpPageRightState();
+  _SignInFinalRightState createState() => _SignInFinalRightState();
 }
 
-class _SignUpPageRightState extends State<SignUpPageRight> {
+class _SignInFinalRightState extends State<SignInFinalRight> {
   @override
   Widget build(BuildContext context) {
     return Expanded(

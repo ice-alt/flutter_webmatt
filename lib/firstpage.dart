@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_webmatt/content_view.dart';
 import 'package:flutter_webmatt/custom_tab.dart';
 import 'package:flutter_webmatt/custom_tab_bar.dart';
+import 'package:flutter_webmatt/signinfinal.dart';
 import 'package:flutter_webmatt/signinview.dart';
-import 'package:flutter_webmatt/signupview.dart';
 
 class FirstPage extends StatefulWidget {
   const FirstPage({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class _FirstPageState extends State<FirstPage>
   late TabController tabController;
   List<ContentView> contentViews = [
     ContentView(CustomTab(title: 'Sign up'), SigninView()),
-    ContentView(CustomTab(title: 'Sign in'), SignupView()),
+    ContentView(CustomTab(title: 'Sign in'), SignInFinal()),
   ];
 
   @override
