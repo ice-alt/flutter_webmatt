@@ -3,6 +3,8 @@ import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webmatt/enrollment.dart';
 import 'package:flutter_webmatt/student_timetable.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:unicons/unicons.dart';
 
 // void main() {
 //   runApp(MyApp());
@@ -70,7 +72,7 @@ class _StudentPageState extends State<StudentPage> {
                   child: Row(
                     children: [
                       Icon(
-                        AntIcons.schedule_outline,
+                        UniconsLine.schedule,
                         size: 50.0,
                         color: Colors.white,
                       ),
@@ -112,7 +114,7 @@ class _StudentPageState extends State<StudentPage> {
                 onTap: () {
                   page.jumpToPage(0);
                 },
-                icon: Icon(Icons.table_chart),
+                icon: Icon(Iconsax.timer),
               ),
               SideMenuItem(
                 priority: 1,
@@ -120,7 +122,7 @@ class _StudentPageState extends State<StudentPage> {
                 onTap: () {
                   page.jumpToPage(1);
                 },
-                icon: Icon(Icons.supervisor_account),
+                icon: Icon(Iconsax.people),
               ),
             ],
           ),

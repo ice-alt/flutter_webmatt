@@ -3,6 +3,8 @@ import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webmatt/billing.dart';
 import 'package:flutter_webmatt/edit_events_classes.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:unicons/unicons.dart';
 
 // void main() {
 //   runApp(MyApp());
@@ -70,7 +72,7 @@ class _StaffPageState extends State<StaffPage> {
                   child: Row(
                     children: [
                       Icon(
-                        AntIcons.schedule_outline,
+                        UniconsLine.schedule,
                         size: 50.0,
                         color: Colors.white,
                       ),
@@ -104,7 +106,7 @@ class _StaffPageState extends State<StaffPage> {
                 onTap: () {
                   page.jumpToPage(0);
                 },
-                icon: Icon(Icons.pending_actions_outlined),
+                icon: Icon(Iconsax.pen_add),
               ),
               SideMenuItem(
                 priority: 1,
@@ -112,7 +114,7 @@ class _StaffPageState extends State<StaffPage> {
                 onTap: () {
                   page.jumpToPage(1);
                 },
-                icon: Icon(Icons.note_add_outlined),
+                icon: Icon(Iconsax.add),
               ),
               SideMenuItem(
                 priority: 2,
@@ -120,7 +122,7 @@ class _StaffPageState extends State<StaffPage> {
                 onTap: () {
                   page.jumpToPage(2);
                 },
-                icon: Icon(Icons.money),
+                icon: Icon(Iconsax.money),
               ),
             ],
           ),

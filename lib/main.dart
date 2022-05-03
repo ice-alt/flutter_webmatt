@@ -9,8 +9,9 @@
 //@dart=2.9
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_webmatt/lecturer.dart';
 import 'package:google_fonts/google_fonts.dart';
+
+import 'asc_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,9 +27,9 @@ class MyApp extends StatelessWidget {
         ),
       ),
       title: 'Master Ashesi Timetable',
-      home: LecturerPage(),
-      // ClubheadPage(),
-      //ASCPage(),
+      home: //LecturerPage(),
+          // ClubheadPage(),
+          ASCPage(),
       //SigninView(),
       //FirstPage(),
       //RegistryPage(title: ''),

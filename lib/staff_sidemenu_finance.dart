@@ -3,6 +3,8 @@ import 'package:easy_sidemenu/easy_sidemenu.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_webmatt/billing.dart';
 import 'package:flutter_webmatt/student_timetable_event.dart';
+import 'package:iconsax/iconsax.dart';
+import 'package:unicons/unicons.dart';
 
 // void main() {
 //   runApp(MyApp());
@@ -70,7 +72,7 @@ class _FinancePageState extends State<FinancePage> {
                   child: Row(
                     children: [
                       Icon(
-                        AntIcons.schedule_outline,
+                        UniconsLine.schedule,
                         size: 50.0,
                         color: Colors.white,
                       ),
@@ -104,7 +106,7 @@ class _FinancePageState extends State<FinancePage> {
                 onTap: () {
                   page.jumpToPage(0);
                 },
-                icon: Icon(Icons.money),
+                icon: Icon(Iconsax.money),
               ),
               SideMenuItem(
                 priority: 1,
@@ -112,7 +114,7 @@ class _FinancePageState extends State<FinancePage> {
                 onTap: () {
                   page.jumpToPage(1);
                 },
-                icon: Icon(Icons.view_agenda_outlined),
+                icon: Icon(Iconsax.activity),
               ),
               // SideMenuItem(
               //   priority: 2,
